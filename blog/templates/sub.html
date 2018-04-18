@@ -1,0 +1,31 @@
+{% extends 'navi.html' %}
+{% load static %}
+
+{% block content %}  
+        <div data-role="content" >
+            <ul data-role="listview" data-inset="true"> 
+                <li><a href="{% url 'cimage'%}" rel="external">
+                            <img src="{% static 'images/pic_i.png' %}"  alt="" class="ui-li-thumb" />
+                            <h3 class="title_style">캠퍼스 이미지</h3>
+                      </a>
+                </li> 
+                <li ><a href="#" >
+                            <img src="{% static  'images/intro_i.png' %}" alt="" class="ui-li-thumb"/>
+                            <h3 class="title_style">대학교소개</h3>
+                        </a>
+                </li> 
+                <li><a href="#">
+                            <img src="{% static 'images/movie_i.png' %}" alt="" class="ui-li-thumb"/>
+                            <h3 class="title_style">홍보동영상</h3>
+                      </a>
+                </li> 
+                <li><a href="#" >
+                            <img src="{% static 'images/map_i.png' %}" alt="" class="ui-li-thumb" />
+                            <h3 class="title_style">캠퍼스맵</h3>
+                      </a>
+                </li> 
+            </ul>     
+        </div> <!-- content 끝-->		 
+    </div><!-- page 끝-->
+{% endblock %}     
+     
